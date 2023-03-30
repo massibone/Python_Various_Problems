@@ -1,0 +1,6 @@
+word_pilandrom = str(input("Please enter a word: "))
+new_word=word_pilandrom.lower().replace(" ","")
+if new_word[::1] == new_word[::-1]:
+    print("It's a aplindrome")
+else:
+    print("It's NOT a palindrome")
