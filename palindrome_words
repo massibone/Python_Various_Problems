@@ -3,4 +3,22 @@ new_word=word_pilandrom.lower().replace(" ","")
 if new_word[::1] == new_word[::-1]:
     print("It's a aplindrome")
 else:
-    print("It's NOT a palindrome")
+    print("It's NOT a palindrome"
+    
+#other version
+'''
+def main():
+ word = input("Please enter a string, uppercase letters only.\n")
+ back = -1
+ isPal = True
+ for i in range(len(word)//2):
+ if word[i] != word[back]:
+ isPal = False
+ break
+ back = back - 1
+ if isPal:
+ print(word,"is a palindrome.")
+ else:
+ print(word,"is not a palindrome.")
+main()
+'''
