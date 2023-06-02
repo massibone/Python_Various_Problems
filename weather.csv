@@ -1,0 +1,11 @@
+weather.csv
+,period,short_desc,temp,desc
+0,Today,Patchy Fogthen Haze,High: 78 °F,"Today: Widespread haze after 8am. Patchy smoke after 8am. Patchy fog before 8am.  Otherwise, mostly sunny, with a high near 78. Calm wind becoming south 5 to 8 mph in the afternoon. "
+1,Tonight,Mostly Clearthen PatchyFog,Low: 64 °F,"Tonight: Patchy fog after 5am.  Otherwise, mostly clear, with a low around 64. South wind 5 to 9 mph. "
+2,Friday,Patchy Fogthen ChanceT-storms,High: 84 °F,"Friday: A 30 percent chance of showers and thunderstorms after 2pm.  Patchy fog before 8am.  Otherwise, sunny, with a high near 84. Light and variable wind becoming southeast 5 to 8 mph in the afternoon. "
+3,FridayNight,ChanceT-storms thenChanceShowers,Low: 62 °F,"Friday Night: A 50 percent chance of showers and thunderstorms.  Mostly cloudy, with a low around 62. Northeast wind around 6 mph. "
+4,Saturday,ShowersLikely,High: 64 °F,"Saturday: Showers likely and possibly a thunderstorm.  Mostly cloudy, with a steady temperature around 64. Northeast wind 10 to 16 mph.  Chance of precipitation is 60%. New precipitation amounts of less than a tenth of an inch, except higher amounts possible in thunderstorms. "
+5,SaturdayNight,ChanceShowers,Low: 55 °F,"Saturday Night: A 50 percent chance of showers.  Mostly cloudy, with a low around 55."
+6,Sunday,ChanceShowers,High: 65 °F,"Sunday: A 40 percent chance of showers.  Partly sunny, with a high near 65."
+7,SundayNight,ChanceShowers,Low: 57 °F,"Sunday Night: A 40 percent chance of showers.  Mostly cloudy, with a low around 57."
+8,Monday,ChanceShowers,High: 68 °F,"Monday: A 30 percent chance of showers.  Partly sunny, with a high near 68."
