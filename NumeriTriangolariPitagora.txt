@@ -1,0 +1,20 @@
+Il numero triangolare si ottiene moltiplicando il numero di puntini d'un lato n per il numero seguente (n+1) e dividendo per 2 il prodotto(che è sempre pari)
+n(n+1)/2
+   .
+  . .
+ . . .
+
+Ecco una lista dei primi dieci numeri triangolari calcolati utilizzando la formula n(n+1)/2:
+
+T1 = 1
+T2 = 3
+T3 = 6
+T4 = 10
+T5 = 15
+T6 = 21
+T7 = 28
+T8 = 36
+T9 = 45
+T10 = 55
+
+A triangular number is the sum of all numbers up to the current, e.g. 1+2+3+4+5 = 15 is a triangular number.
