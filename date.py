@@ -18,8 +18,7 @@ def digitOfLife(date):
     return sum
     
 print(digitOfLife(date))
-------------------------------------
-Enter your date of birth in YYYYMMDD format: > 19991229
-6
-Enter your date of birth in YYYYMMDD format: > 20000101
-4
+'''
+Enter your date of birth in YYYYMMDD format: > 199912296
+Enter your date of birth in YYYYMMDD format: > 200001014
+'''
