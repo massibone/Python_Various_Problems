@@ -7,4 +7,4 @@ def is_palindrome(word):
   Returns:
     True se la parola è un palindromo, False altrimenti.
   """
-return word == word[::-1]
+  return word == word[::-1]
