@@ -27,3 +27,8 @@ def find_palindromes(file_path):
         if len(word) > 3 and is_palindrome(word):
           palindromes.append(word)
   return palindromes
+
+# Esempio d'uso:
+file_path = "mio_file.txt"  # Sostituisci con il percorso del tuo file
+result = find_palindromes(file_path)
+print(result)
