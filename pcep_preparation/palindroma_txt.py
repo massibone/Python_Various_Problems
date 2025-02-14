@@ -18,3 +18,12 @@ def find_palindromes(file_path):
   Returns:
     Una lista contenente tutte le palindromi trovate.
   """
+  
+  palindromes = []
+  with open(file_path, 'r') as file:
+    for line in file:
+      words = line.split()
+      for word in words:
+        if len(word) > 3 and is_palindrome(word):
+          palindromes.append(word)
+  return palindromes
