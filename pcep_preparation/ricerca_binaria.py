@@ -1,4 +1,7 @@
-'''nell'uso avanzato di costrutti  else'''
+'''
+Nell'uso avanzato di costrutti  else
+'''
+
 def ricerca_binaria(lista, target):
     sinistra, destra = 0, len(lista) - 1
     while sinistra <= destra:
