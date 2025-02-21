@@ -25,3 +25,10 @@ def find_palindromes(file_path, min_length=3, output_file=None):
       for word in words:
         if len(word) >= min_length and is_palindrome(word):
           palindromes.append(word)
+
+  if output_file:
+    with open(output_file, 'w') as output:
+      for palindrome in palindromes:
+        output.write(palindrome + '\n')
+
+  return palindromes
