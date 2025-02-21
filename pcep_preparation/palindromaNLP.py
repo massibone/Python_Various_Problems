@@ -17,3 +17,11 @@ def find_palindromes(file_path, min_length=3, output_file=None):
   Returns:
     Una lista contenente tutte le palindromi trovate.
   """
+
+  palindromes = []
+  with open(file_path, 'r') as file:
+    for line in file:
+      words = line.split()
+      for word in words:
+        if len(word) >= min_length and is_palindrome(word):
+          palindromes.append(word)
