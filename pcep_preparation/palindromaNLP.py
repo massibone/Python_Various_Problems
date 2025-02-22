@@ -32,3 +32,10 @@ def find_palindromes(file_path, min_length=3, output_file=None):
         output.write(palindrome + '\n')
 
   return palindromes
+# Esempio d'uso:
+file_path = "mio_file.txt"
+output_file = "palindromi.txt"
+min_length = 4
+
+result = find_palindromes(file_path, min_length, output_file)
+print("Palindromi trovati:", result)
