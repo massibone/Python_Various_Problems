@@ -7,3 +7,17 @@ def trova_numero_perfetto(limite):
         Il numero perfetto trovato, altrimenti None.
     '''
     
+
+
+    for num in range(2, limite + 1):
+        divisori = []
+        for i in range(1, num):
+            if num % i == 0:
+                divisori.append(i)
+        try:
+            if sum(divisori) == num:
+                return num
+        except TypeError:
+            print("Errore: divisori non è una lista.")
+    else:
+        print("Nessun numero perfetto trovato fino a", limite)
