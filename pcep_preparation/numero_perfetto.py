@@ -21,3 +21,8 @@ def trova_numero_perfetto(limite):
             print("Errore: divisori non è una lista.")
     else:
         print("Nessun numero perfetto trovato fino a", limite)
+
+# Un numero perfetto è uguale alla somma dei suoi divisori propri
+risultato = trova_numero_perfetto(10000)
+if risultato:
+    print("Il primo numero perfetto trovato è:", risultato)
