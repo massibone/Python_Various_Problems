@@ -14,3 +14,9 @@ def tabella_moltiplicazione_generatore_grande(righe, colonne):
 
 # Esempio: tabella 10000x10000 (genera righe su richiesta)
 tabella_enorme = tabella_moltiplicazione_generatore_grande(10000, 10000)
+
+
+# Esempio di come accedere ai dati (solo una riga alla volta)
+for riga in tabella_enorme:
+    # Elabora la riga (ad esempio, salvala in un file)
+    print(list(riga)[:10])  # Stampa solo i primi 10 elementi della riga
