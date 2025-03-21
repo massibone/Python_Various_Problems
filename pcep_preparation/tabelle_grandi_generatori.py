@@ -11,3 +11,6 @@ def tabella_moltiplicazione_generatore_grande(righe, colonne):
     """Genera una tabella di moltiplicazione di grandi dimensioni utilizzando generatori."""
     for riga in range(1, righe + 1):
         yield genera_riga_moltiplicazione(riga, colonne)
+
+# Esempio: tabella 10000x10000 (genera righe su richiesta)
+tabella_enorme = tabella_moltiplicazione_generatore_grande(10000, 10000)
