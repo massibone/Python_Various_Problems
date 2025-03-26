@@ -8,3 +8,5 @@ e le matrici di filtri possono essere di dimensioni considerevoli (ad esempio, 1
 Moltiplicazioni ripetute: Il filtro viene applicato a ogni pixel dell'immagine, 
 quindi le moltiplicazioni vengono eseguite milioni di volte.
 '''
+import numpy as np
+from PIL import Image
