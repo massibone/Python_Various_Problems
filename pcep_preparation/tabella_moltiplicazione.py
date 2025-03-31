@@ -16,3 +16,19 @@ for i in range(1, 11):
         prodotto = i * j
         print(prodotto, end='\t')
     print()
+# Definisci la dimensione della tabella di moltiplicazione
+dimensione = 10
+
+# Stampa l'intestazione della tabella
+print("   |", end="")
+for i in range(1, dimensione + 1):
+    print(f"{i:4}", end="")
+print()
+print("-" * (dimensione * 5 + 3))
+
+# Stampa la tabella di moltiplicazione
+for i in range(1, dimensione + 1):
+    print(f"{i:3} |", end="")
+    for j in range(1, dimensione + 1):
+        print(f"{i * j:4}", end="")
+    print()
