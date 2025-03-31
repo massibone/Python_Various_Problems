@@ -16,6 +16,7 @@ for i in range(1, 11):
         prodotto = i * j
         print(prodotto, end='\t')
     print()
+
 # Definisci la dimensione della tabella di moltiplicazione
 dimensione = 10
 
