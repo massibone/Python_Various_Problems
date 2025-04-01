@@ -1,4 +1,3 @@
-
 import random
 
 # Funzione per lanciare un dado
