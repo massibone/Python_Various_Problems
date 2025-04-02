@@ -9,3 +9,7 @@ def gioca_partita():
     print("Benvenuto alla partita a dadi!")
     giocatore1 = input("Inserisci il nome del giocatore 1: ")
     giocatore2 = input("Inserisci il nome del giocatore 2: ")
+
+    # Inizializza i punteggi dei giocatori
+    punteggio_giocatore1 = 0
+    punteggio_giocatore2 = 0
