@@ -42,3 +42,6 @@ def gioca_partita():
         elif punteggio_giocatore2 >= 3:
             print(f"\n{giocatore2} vince la partita con un punteggio di {punteggio_giocatore2} - {punteggio_giocatore1}!")
             break
+
+# Gioca la partita
+gioca_partita()
