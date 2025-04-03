@@ -13,3 +13,13 @@ def gioca_partita():
     # Inizializza i punteggi dei giocatori
     punteggio_giocatore1 = 0
     punteggio_giocatore2 = 0
+   # Gioca la partita
+    while True:
+        print(f"\nPunteggio attuale: {giocatore1} - {punteggio_giocatore1}, {giocatore2} - {punteggio_giocatore2}")
+        input(f"{giocatore1}, premi invio per lanciare il dado...")
+        dado_giocatore1 = lancia_dado()
+        print(f"{giocatore1} ha lanciato: {dado_giocatore1}")
+
+        input(f"{giocatore2}, premi invio per lanciare il dado...")
+        dado_giocatore2 = lancia_dado()
+        print(f"{giocatore2} ha lanciato: {dado_giocatore2}")
