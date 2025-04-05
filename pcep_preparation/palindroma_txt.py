@@ -1,5 +1,5 @@
 def is_palindrome(word):
-  """Verifica se una parola è un palindromo.
+  '''Verifica se una parola è un palindromo.
 
   Args:
     word: La parola da controllare.
