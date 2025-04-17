@@ -20,5 +20,6 @@ def tabella_moltiplicazione_numpy_grande(righe, colonne):
 tabella_grande = tabella_moltiplicazione_numpy_grande(1000, 1000)
 print(tabella_grande)
 
-# Per tabelle ancora più grandi (es. 10000x10000), considera di salvare l'array in un file
+# Per tabelle ancora più grandi (es. 10000x10000), 
+# considera di salvare l'array in un file
 # np.save('tabella_grande.npy', tabella_grande)
