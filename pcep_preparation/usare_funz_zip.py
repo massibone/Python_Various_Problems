@@ -1,5 +1,7 @@
 '''
-Le liste devono avere la stessa lunghezza. Se una lista è più corta, zip() si fermerà alla lunghezza della lista più breve.'''
+Le liste devono avere la stessa lunghezza. 
+Se una lista è più corta, 
+zip() si fermerà alla lunghezza della lista più breve.'''
 # Esempio di liste
 chiavi = ["nome", "età", "città"]
 valori = ["Alice", 30, "Roma"]
