@@ -13,6 +13,7 @@ def compare_similar_files(directory):
     return similar_files
 
 # Esempio di utilizzo
+
 directory_path = '/percorso/alla/cartella'
 similar_files = compare_similar_files(directory_path)
 
