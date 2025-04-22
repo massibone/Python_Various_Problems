@@ -35,3 +35,8 @@ for parola in parole:
 # Oppure, usando collections.Counter (più efficiente):
 from collections import Counter
 frequenze = Counter(parole)
+
+# Output
+print("Frequenze delle parole:")
+for parola, count in frequenze.items():
+    print(f"{parola}: {count}")
