@@ -15,6 +15,7 @@ testo = testo.replace("\n", " ")  # Rimuovi a capo
 # Rimuovi punteggiatura (es. !, ., ", etc.)
 import string
 testo_pulito = testo.translate(str.maketrans("", "", string.punctuation))
+
 # Dividi in parole
 parole = testo_pulito.split()
 
