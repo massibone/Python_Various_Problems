@@ -26,3 +26,12 @@ for parola in parole:
         frequenze[parola] += 1
     else:
         frequenze[parola] = 1
+
+# Oppure, versione più concisa con get():
+frequenze = {}
+for parola in parole:
+    frequenze[parola] = frequenze.get(parola, 0) + 1
+
+# Oppure, usando collections.Counter (più efficiente):
+from collections import Counter
+frequenze = Counter(parole)
