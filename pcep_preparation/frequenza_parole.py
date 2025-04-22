@@ -15,3 +15,13 @@ testo = testo.replace("\n", " ")  # Rimuovi a capo
 # Rimuovi punteggiatura (es. !, ., ", etc.)
 import string
 testo_pulito = testo.translate(str.maketrans("", "", string.punctuation))
+# Dividi in parole
+parole = testo_pulito.split()
+
+# Passo 2: Conteggio frequenza
+frequenze = {}
+for parola in parole:
+    if parola in frequenze:
+        frequenze[parola] += 1
+    else:
+        frequenze[parola] = 1
