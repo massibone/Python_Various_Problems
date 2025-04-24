@@ -1,3 +1,4 @@
+
 '''
 Creare un elenco di studenti con nome, materia, e voto, ordinare gli studenti per voto decrescente, e stampare una tabella con posizione, nome, materia, e voto.
 Esempio che combinerà zip(), enumerate(), e sorted() con una funzione personalizzata per il key, in un unico programma
@@ -31,3 +32,15 @@ print("----------------------------------------")
 
 for posizione, studente in enumerate(studenti_ordinati, start=1):
     print(f"{posizione:8} | {studente['nome']:8} | {studente['materia']:10} | {studente['voto']:3}")
+
+'''
+miglioramento
+class Studente:
+    def __init__(self, nome, materia, voto):
+        self.nome = nome
+        self.materia = materia
+        self.voto = voto
+
+    def __repr__(self):
+        return f"{self.nome} | {self.materia} | {self.voto}"
+'''
