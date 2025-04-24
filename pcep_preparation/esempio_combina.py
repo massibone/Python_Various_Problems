@@ -23,3 +23,11 @@ studenti_ordinati = sorted(
     key=lambda studente: studente["voto"],  # Chiave di ordinamento
     reverse=True                           # Ordine decrescente
 )
+
+# 4. Stampa con `enumerate()` per aggiungere la posizione (rank)
+print("Classifica degli studenti:")
+print("Posizione | Nome    | Materia    | Voto")
+print("----------------------------------------")
+
+for posizione, studente in enumerate(studenti_ordinati, start=1):
+    print(f"{posizione:8} | {studente['nome']:8} | {studente['materia']:10} | {studente['voto']:3}")
