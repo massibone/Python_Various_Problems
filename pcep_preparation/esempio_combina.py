@@ -7,3 +7,19 @@ Esempio che combinerà zip(), enumerate(), e sorted() con una funzione personali
 nomi = ["Alice", "Bob", "Charlie", "Diana"]
 materie = ["Matematica", "Inglese", "Storia", "Scienze"]
 voti = [88, 92, 75, 95]
+
+# 1. Usare `zip()` per combinare le liste in una lista di tuple (nome, materia, voto)
+studenti_tuple = list(zip(nomi, materie, voti))
+
+# 2. Convertire in una lista di dizionari per maggiore chiarezza
+studenti = [
+    {"nome": nome, "materia": materia, "voto": voto}
+    for nome, materia, voto in studenti_tuple
+]
+
+# 3. Ordinare gli studenti per voto decrescente (da più alto a più basso)
+studenti_ordinati = sorted(
+    studenti, 
+    key=lambda studente: studente["voto"],  # Chiave di ordinamento
+    reverse=True                           # Ordine decrescente
+)
