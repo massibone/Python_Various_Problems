@@ -27,3 +27,4 @@ weather = pd.DataFrame({
 
 #print to csv
 weather.to_csv('weather.csv')
+
