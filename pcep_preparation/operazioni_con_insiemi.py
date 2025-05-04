@@ -1,3 +1,4 @@
 '''
-Operazioni con insiemi: unione, intersezione e differenza.
+Operazioni con insiemi: 
+unione, intersezione e differenza.
 '''
