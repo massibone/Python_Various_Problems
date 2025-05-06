@@ -13,6 +13,7 @@ print("Insieme B:", insieme_B)
 # 1. Unione (elementi presenti in A o B)
 unione = insieme_A.union(insieme_B)          # Oppure: insieme_A | insieme_B
 print("\nUnione (A ∪ B):", unione)
+
 # 2. Intersezione (elementi comuni a A e B)
 intersezione = insieme_A.intersection(insieme_B)  # Oppure: insieme_A & insieme_B
 print("Intersezione (A ∩ B):", intersezione)
