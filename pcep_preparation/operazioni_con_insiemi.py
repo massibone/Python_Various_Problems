@@ -18,7 +18,6 @@ print("\nUnione (A ∪ B):", unione)
 intersezione = insieme_A.intersection(insieme_B)  # Oppure: insieme_A & insieme_B
 print("Intersezione (A ∩ B):", intersezione)
 
-
 # 3. Differenza (elementi in A ma non in B)
 differenza_A_B = insieme_A.difference(insieme_B)  # Oppure: insieme_A - insieme_B
 print("Differenza (A - B):", differenza_A_B)
