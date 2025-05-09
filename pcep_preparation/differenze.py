@@ -5,3 +5,7 @@ Differenze tra list, tuple, e set
 print("\n--- LIST ---")
 lista = [1, 2, 3, 3, 4]
 print("Lista iniziale:", lista)
+# Modificabilità
+lista.append(5)          # Aggiungi elemento
+lista[0] = 0            # Modifica elemento
+print("Dopo modifica:", lista)
