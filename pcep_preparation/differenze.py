@@ -13,3 +13,11 @@ print("Dopo modifica:", lista)
 
 # Duplicati
 print("Elemento duplicato (3) conservato:", lista.count(3))
+
+# Ordine
+print("Ordine è mantenuto:", lista)  # [0, 2, 3, 3, 4, 5]
+
+# --- ESEMPIO DI TUPLE (elenco ordinato, IMMUTABILE, consente duplicati) ---
+print("\n--- TUPLE ---")
+tupla = (1, 2, 2, 3)
+print("Tuple iniziale:", tupla)
