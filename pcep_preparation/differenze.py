@@ -21,3 +21,6 @@ print("Ordine è mantenuto:", lista)  # [0, 2, 3, 3, 4, 5]
 print("\n--- TUPLE ---")
 tupla = (1, 2, 2, 3)
 print("Tuple iniziale:", tupla)
+
+# Tentativo di modifica (genererà errore se scommentato)
+# tupla[0] = 0  # TypeError: 'tuple' object does not support item assignment
