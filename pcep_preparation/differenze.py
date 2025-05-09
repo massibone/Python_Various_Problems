@@ -10,3 +10,6 @@ print("Lista iniziale:", lista)
 lista.append(5)          # Aggiungi elemento
 lista[0] = 0            # Modifica elemento
 print("Dopo modifica:", lista)
+
+# Duplicati
+print("Elemento duplicato (3) conservato:", lista.count(3))
