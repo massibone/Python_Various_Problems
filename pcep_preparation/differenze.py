@@ -24,3 +24,5 @@ print("Tuple iniziale:", tupla)
 
 # Tentativo di modifica (genererà errore se scommentato)
 # tupla[0] = 0  # TypeError: 'tuple' object does not support item assignment
+# Duplicati
+print("Elemento duplicato (2) conservato:", tupla.count(2))
