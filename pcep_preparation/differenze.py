@@ -36,3 +36,11 @@ print("Dopo unpacking:", a, b, c, d)  # 1 2 2 3
 print("\n--- SET ---")
 insieme = {1, 2, 2, 3}
 print("Set iniziale (duplicati rimosse):", insieme)  # {1, 2, 3}
+
+# Modificabilità
+insieme.add(4)
+insieme.discard(2)  # Rimuovi elemento
+print("Dopo modifica:", insieme)
+
+# Duplicati
+print("Duplicati sono stati rimosse:", {1, 1, 2})  # {1, 2}
