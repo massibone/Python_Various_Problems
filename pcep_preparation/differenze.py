@@ -31,3 +31,8 @@ print("Elemento duplicato (2) conservato:", tupla.count(2))
 # Unpacking
 a, b, c, d = tupla
 print("Dopo unpacking:", a, b, c, d)  # 1 2 2 3
+
+# --- ESEMPIO DI SET (insieme non ordinato, mutabile, NO duplicati) ---
+print("\n--- SET ---")
+insieme = {1, 2, 2, 3}
+print("Set iniziale (duplicati rimosse):", insieme)  # {1, 2, 3}
