@@ -44,3 +44,9 @@ print("Dopo modifica:", insieme)
 
 # Duplicati
 print("Duplicati sono stati rimosse:", {1, 1, 2})  # {1, 2}
+
+
+# Operazioni di insiemi
+insieme2 = {3, 4, 5}
+print("Unione:", insieme.union(insieme2))          # {1, 3, 4, 5}
+print("Intersezione:", insieme.intersection(insieme2))  # {3,4}
