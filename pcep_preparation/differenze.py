@@ -50,7 +50,7 @@ print("Duplicati sono stati rimosse:", {1, 1, 2})  # {1, 2}
 insieme2 = {3, 4, 5}
 print("Unione:", insieme.union(insieme2))          # {1, 3, 4, 5}
 print("Intersezione:", insieme.intersection(insieme2))  # {3,4}
-# --- CONFRONTO TRA I TIPY ---
+# --- CONFRONTO TRA I TIPI ---
 print("\n--- CONFRONTO ---")
 
 # Lista vs Tuple vs Set
@@ -80,23 +80,4 @@ parole = set()
 parole.add("casa")
 parole.add("casa")  # Ignorato
 print("Set di parole uniche:", parole)  # {"casa"}
--elementi_unici_set.py
-def ha_elementi_unici(lista):
-    """
-    Restituisce True se tutti gli elementi sono unici, altrimenti False.
-    """
-    return len(lista) == len(set(lista))
 
-# Test 1: Lista con elementi unici
-lista1 = [1, 2, 3, 4, 5]
-print(f"Lista1: {lista1} → Unici? {ha_elementi_unici(lista1)}")  # Output: True
-
-# Test 2: Lista con duplicati
-lista2 = [1, 2, 2, 3, 4]
-print(f"Lista2: {lista2} → Unici? {ha_elementi_unici(lista2)}")  # Output: False
-'''
-Complessità computazionale:
-Convertire una lista in un set richiede O(n) tempo, dove n è la lunghezza della lista.
-Il confronto tra le lunghezze è O(1).
-Applicabilità: Funziona per qualsiasi tipo di elemento hashable (es. numeri, stringhe, tuple), ma non per oggetti non hashabili (es. liste annidate).
-'''
