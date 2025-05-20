@@ -4,3 +4,17 @@ ma con alcune differenze importanti. Un namespace è un insieme di nomi che sono
 '''
 #Supponiamo di avere un modulo chiamato math_utils.py che contiene diverse funzioni matematiche:
 # math_utils.py
+
+def add(x, y):
+return x + y
+
+def subtract(x, y):
+return x - y
+
+def multiply(x, y):
+return x * y
+
+def divide(x, y):
+if y == 0:
+raise ValueError("Divisione per zero!")
+return x / y
