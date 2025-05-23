@@ -18,3 +18,12 @@ def divide(x, y):
 if y == 0:
 raise ValueError("Divisione per zero!")
 return x / y
+def _private_function(x):
+# Questa funzione non dovrebbe essere utilizzata dall'esterno
+return x * 2
+# math_utils.py
+
+__all__ = ['add', 'subtract', 'multiply', 'divide']
+
+def add(x, y):
+return x + y
