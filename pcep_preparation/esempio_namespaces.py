@@ -6,24 +6,24 @@ ma con alcune differenze importanti. Un namespace è un insieme di nomi che sono
 # math_utils.py
 
 def add(x, y):
-return x + y
+  return x + y
 
 def subtract(x, y):
-return x - y
+  return x - y
 
 def multiply(x, y):
-return x * y
+  return x * y
 
 def divide(x, y):
-if y == 0:
-raise ValueError("Divisione per zero!")
-return x / y
+  if y == 0:
+    raise ValueError("Divisione per zero!")
+    return x / y
 def _private_function(x):
 # Questa funzione non dovrebbe essere utilizzata dall'esterno
-return x * 2
+  return x * 2
 # math_utils.py
 
 __all__ = ['add', 'subtract', 'multiply', 'divide']
 
 def add(x, y):
-return x + y
+  return x + y
