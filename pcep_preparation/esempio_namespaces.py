@@ -30,3 +30,29 @@ def add(x, y):
 
 def subtract(x, y):
   return x - y
+def multiply(x, y):
+return x * y
+
+def divide(x, y):
+if y == 0:
+raise ValueError("Divisione per zero!")
+return x / y
+
+def _private_function(x):
+# Questa funzione non dovrebbe essere utilizzata dall'esterno
+return x * 2
+'''
+n questo esempio, il namespace __all__ contiene solo i nomi delle funzioni pubbliche. Quando si importa il modulo math_utils, solo queste funzioni saranno disponibili:
+
+>>> from math_utils import *
+>>> add(2, 3)
+5
+>>> subtract(4, 2)
+2
+>>> multiply(5, 6)
+30
+>>> divide(10, 2)
+5.0
+>>> _private_function(2)
+NameError: name '_private_function' is not defined
+'''
