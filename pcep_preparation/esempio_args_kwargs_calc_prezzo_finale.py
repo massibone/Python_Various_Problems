@@ -28,3 +28,10 @@ def calcola_prezzo_finale(prezzo_base, sconto=0, tassa=0.22, *extra_costi, **opz
     prezzo_finale = (prezzo_scontato + costi_extra + costi_opzioni) * (1 + tassa)
     
     return round(prezzo_finale, 2)
+# Test dell'esempio 1
+print("=== ESEMPIO 1: Calcolo prezzo finale ===")
+print(f"Prezzo base: {calcola_prezzo_finale(100)}")
+print(f"Con sconto 10%: {calcola_prezzo_finale(100, 0.1)}")
+print(f"Con sconto e costi extra: {calcola_prezzo_finale(100, 0.1, 0.22, 15, 8)}")
+print(f"Completo: {calcola_prezzo_finale(100, 0.1, 0.22, 15, 8, spedizione=12, assicurazione=5)}")
+print()
