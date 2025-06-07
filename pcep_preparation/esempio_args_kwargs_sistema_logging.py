@@ -44,4 +44,5 @@ log_messaggio("Applicazione avviata")
 log_messaggio("Errore nella connessione", "ERROR", True, "database", "connection")
 log_messaggio("Login effettuato", "INFO", False, "auth", "security", 
               utente="mario.rossi", ip="192.168.1.10", sessione="abc123")
+
 print()
