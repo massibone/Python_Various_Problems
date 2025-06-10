@@ -12,3 +12,13 @@ def costruisci_query(tabella, operazione="SELECT", colonne=None, *condizioni, **
     """
     query_parts = []
     
+    # Parte principale della query
+    if operazione.upper() == "SELECT":
+        cols = ", ".join(colonne) if colonne else "*"
+        query_parts.append(f"SELECT {cols}")
+        query_parts.append(f"FROM {tabella}")
+    elif operazione.upper() == "DELETE":
+        query_parts.append(f"DELETE FROM {tabella}")
+    elif operazione.upper() == "UPDATE":
+        query_parts.append(f"UPDATE {tabella}")
+    
