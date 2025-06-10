@@ -22,3 +22,20 @@ def costruisci_query(tabella, operazione="SELECT", colonne=None, *condizioni, **
     elif operazione.upper() == "UPDATE":
         query_parts.append(f"UPDATE {tabella}")
     
+
+    # Aggiungi condizioni WHERE
+    if condizioni:
+        where_clause = " AND ".join(condizioni)
+        query_parts.append(f"WHERE {where_clause}")
+    
+    # Aggiungi parametri aggiuntivi
+    if "order_by" in parametri:
+        query_parts.append(f"ORDER BY {parametri['order_by']}")
+    
+    if "limit" in parametri:
+        query_parts.append(f"LIMIT {parametri['limit']}")
+    
+    if "group_by" in parametri:
+        query_parts.append(f"GROUP BY {parametri['group_by']}")
+    
+    return " ".join(query_parts)
