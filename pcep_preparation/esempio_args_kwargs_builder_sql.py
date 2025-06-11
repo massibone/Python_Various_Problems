@@ -39,3 +39,18 @@ def costruisci_query(tabella, operazione="SELECT", colonne=None, *condizioni, **
         query_parts.append(f"GROUP BY {parametri['group_by']}")
     
     return " ".join(query_parts)
+    
+# Test 
+print("=== Builder query SQL ===")
+print("Query semplice:")
+print(costruisci_query("utenti"))
+print()
+
+print("Query con colonne specifiche:")
+print(costruisci_query("utenti", colonne=["nome", "email", "data_creazione"]))
+print()
+
+print("Query con condizioni:")
+print(costruisci_query("prodotti", "SELECT", ["nome", "prezzo"], 
+                      "categoria = 'elettronica'", "prezzo > 100"))
+print()
