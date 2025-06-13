@@ -54,3 +54,12 @@ print("Query con condizioni:")
 print(costruisci_query("prodotti", "SELECT", ["nome", "prezzo"], 
                       "categoria = 'elettronica'", "prezzo > 100"))
 print()
+print("Query complessa:")
+print(costruisci_query("ordini", "SELECT", ["cliente", "COUNT(*) as totale"], 
+                      "data_ordine >= '2024-01-01'", "stato = 'completato'",
+                      group_by="cliente", order_by="totale DESC", limit=10))
+print()
+
+print("Query di cancellazione:")
+print(costruisci_query("log_vecchi", "DELETE", 
+                      "data_creazione < '2024-01-01'", "processed = 1"))
