@@ -11,6 +11,5 @@ def fib(n):
         elem_1, elem_2 = elem_2, the_sum
     return the_sum
 
-
 for n in range(1, 10):  # testing
     print(n, "->", fib(n))
