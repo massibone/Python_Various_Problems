@@ -14,3 +14,14 @@ def incrementa_contatore():
     # Modifica la variabile globale
     contatore_globale += 1
     print(f"Contatore globale: {contatore_globale}")
+
+
+def leggi_contatore():
+    """Accede alla variabile globale senza modificarla"""
+    # Non serve 'global' se leggiamo soltanto
+    print(f"App: {nome_app}")
+    print(f"Valore attuale del contatore: {contatore_globale}")
+    
+    # Questa è una variabile locale con lo stesso nome
+    contatore_globale = 999  # Questa è LOCALE, non modifica quella globale
+    print(f"Contatore locale nella funzione: {contatore_globale}")
