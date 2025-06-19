@@ -25,3 +25,6 @@ def leggi_contatore():
     # Questa è una variabile locale con lo stesso nome
     contatore_globale = 999  # Questa è LOCALE, non modifica quella globale
     print(f"Contatore locale nella funzione: {contatore_globale}")
+def esempio_scope_locale():
+    """Dimostra il comportamento delle variabili locali"""
+    x = 10  # Variabile locale
