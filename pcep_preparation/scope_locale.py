@@ -29,3 +29,10 @@ def leggi_contatore():
 def esempio_scope_locale():
     """Dimostra il comportamento delle variabili locali"""
     x = 10  # Variabile locale
+    
+    def funzione_interna():
+        x = 20  # Questa è una nuova variabile locale
+        print(f"x dentro funzione_interna: {x}")
+    
+    funzione_interna()
+    print(f"x nella funzione esterna: {x}")  # Rimane 10
