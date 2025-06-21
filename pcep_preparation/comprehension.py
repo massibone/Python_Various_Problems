@@ -10,6 +10,7 @@ dizionario_pari = {chiave: valore for chiave, valore in dizionario.items() if va
 print(dizionario_pari)  # {'b': 2, 'd': 4}
 '''
 
+
 quadrati_pari = [x**2 for x in range(1, 101) if x % 2 == 0]
 for i, quadrato in enumerate(quadrati_pari):
     print(f"Il quadrato di {i*2 + 2} è {quadrato}")
