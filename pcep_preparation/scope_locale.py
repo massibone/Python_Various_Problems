@@ -46,3 +46,15 @@ leggi_contatore()
 print(f"Contatore dopo leggi_contatore(): {contatore_globale}")  # Rimane invariato
 esempio_scope_locale()
 print()
+
+# Esempio Sistema di configurazione con nonlocal
+def crea_configuratore():
+    """Factory function che dimostra l'uso di nonlocal"""
+    # Variabili della funzione esterna (enclosing scope)
+    configurazione = {
+        "debug": False,
+        "max_connessioni": 100,
+        "timeout": 30
+    }
+    livello_log = "INFO"
+    
