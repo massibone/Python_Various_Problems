@@ -12,6 +12,7 @@ latex_content = """
 \\begin{document}
 \\section*{Esempio di documento LaTeX generato con Python}
 
+
 Questo è un esempio di come è possibile generare un documento LaTeX utilizzando Python.
 
 \\begin{itemize}
