@@ -58,3 +58,10 @@ def crea_configuratore():
     }
     livello_log = "INFO"
     
+
+    def get_config(chiave=None):
+        """Accede alla configurazione senza modificarla"""
+        if chiave:
+            return configurazione.get(chiave)
+        return configurazione.copy()
+    
