@@ -64,3 +64,10 @@ def crea_configuratore():
             return configurazione.get(chiave)
         return configurazione.copy()
     
+
+    def set_config(chiave, valore):
+        """Modifica la configurazione usando nonlocal"""
+        nonlocal configurazione  # Necessario per modificare
+        configurazione[chiave] = valore
+        print(f"Configurazione aggiornata: {chiave} = {valore}")
+        
