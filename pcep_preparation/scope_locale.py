@@ -37,7 +37,7 @@ def esempio_scope_locale():
     funzione_interna()
     print(f"x nella funzione esterna: {x}")  # Rimane 10
 
-# Test dell'esempio 1
+# Esempio 1
 print("=== ESEMPIO 1: Scope globale e locale ===")
 print(f"Contatore iniziale: {contatore_globale}")
 incrementa_contatore()
