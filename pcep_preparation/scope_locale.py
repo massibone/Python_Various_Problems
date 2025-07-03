@@ -71,3 +71,11 @@ def crea_configuratore():
         configurazione[chiave] = valore
         print(f"Configurazione aggiornata: {chiave} = {valore}")
         
+  
+   def cambia_livello_log(nuovo_livello):
+        """Modifica il livello di log usando nonlocal"""
+        nonlocal livello_log  # Senza questo, creerebbe una variabile locale
+        vecchio_livello = livello_log
+        livello_log = nuovo_livello
+        print(f"Livello log cambiato da {vecchio_livello} a {livello_log}")
+    
