@@ -16,5 +16,6 @@ print(f"Lista2: {lista2} → Unici? {ha_elementi_unici(lista2)}")  # Output: Fal
 Complessità computazionale:
 Convertire una lista in un set richiede O(n) tempo, dove n è la lunghezza della lista.
 Il confronto tra le lunghezze è O(1).
-Applicabilità: Funziona per qualsiasi tipo di elemento hashable (es. numeri, stringhe, tuple), ma non per oggetti non hashabili (es. liste annidate).
+Applicabilità: Funziona per qualsiasi tipo di elemento hashable (es. numeri, stringhe, tuple), 
+ma non per oggetti non hashabili (es. liste annidate).
 '''
