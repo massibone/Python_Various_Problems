@@ -79,3 +79,6 @@ def crea_configuratore():
         livello_log = nuovo_livello
         print(f"Livello log cambiato da {vecchio_livello} a {livello_log}")
     
+    def get_livello_log():
+        """Legge il livello di log corrente"""
+        return livello_log  
