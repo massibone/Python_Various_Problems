@@ -82,3 +82,15 @@ def crea_configuratore():
     def get_livello_log():
         """Legge il livello di log corrente"""
         return livello_log  
+ 
+def reset_config():
+        """Reset completo della configurazione"""
+        nonlocal configurazione, livello_log
+        configurazione = {
+            "debug": False,
+            "max_connessioni": 100,
+            "timeout": 30
+        }
+        livello_log = "INFO"
+        print("Configurazione resettata ai valori predefiniti")
+   
