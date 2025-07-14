@@ -93,4 +93,13 @@ def reset_config():
         }
         livello_log = "INFO"
         print("Configurazione resettata ai valori predefiniti")
-   
+       
+    # Restituisce un dizionario con tutte le funzioni
+    return {
+        "get": get_config,
+        "set": set_config,
+        "log_level": get_livello_log,
+        "set_log_level": cambia_livello_log,
+        "reset": reset_config
+    }
+
