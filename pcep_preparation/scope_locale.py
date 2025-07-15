@@ -102,3 +102,10 @@ def reset_config():
         "reset": reset_config
     }
 
+
+# Test dell'esempio 2
+print("=== ESEMPIO 2: Nonlocal con configuratore ===")
+config = crea_configuratore()
+
+print("Configurazione iniziale:", config["get"]())
+print("Livello log iniziale:", config["log_level"]())
