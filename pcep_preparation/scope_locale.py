@@ -109,3 +109,16 @@ config = crea_configuratore()
 
 print("Configurazione iniziale:", config["get"]())
 print("Livello log iniziale:", config["log_level"]())
+
+config["set"]("debug", True)
+config["set"]("max_connessioni", 200)
+config["set_log_level"]("DEBUG")
+
+print("Dopo le modifiche:")
+print("Debug mode:", config["get"]("debug"))
+print("Max connessioni:", config["get"]("max_connessioni"))
+print("Livello log:", config["log_level"]())
+
+config["reset"]()
+print("Dopo reset:", config["get"]())
+print()
