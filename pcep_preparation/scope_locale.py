@@ -14,7 +14,6 @@ def incrementa_contatore():
     contatore_globale += 1
     print(f"Contatore globale: {contatore_globale}")
 
-
 def leggi_contatore():
     """Accede alla variabile globale senza modificarla"""
     # Non serve 'global' se leggiamo soltanto
@@ -57,21 +56,19 @@ def crea_configuratore():
     }
     livello_log = "INFO"
     
- def get_config(chiave=None):
+    def get_config(chiave=None):
         """Accede alla configurazione senza modificarla"""
         if chiave:
             return configurazione.get(chiave)
         return configurazione.copy()
     
-
- def set_config(chiave, valore):
+    def set_config(chiave, valore):
         """Modifica la configurazione usando nonlocal"""
         nonlocal configurazione  # Necessario per modificare
         configurazione[chiave] = valore
         print(f"Configurazione aggiornata: {chiave} = {valore}")
-        
-  
-   def cambia_livello_log(nuovo_livello):
+    
+    def cambia_livello_log(nuovo_livello):
         """Modifica il livello di log usando nonlocal"""
         nonlocal livello_log  # Senza questo, creerebbe una variabile locale
         vecchio_livello = livello_log
@@ -80,9 +77,9 @@ def crea_configuratore():
     
     def get_livello_log():
         """Legge il livello di log corrente"""
-        return livello_log  
-
-def reset_config():
+        return livello_log
+    
+    def reset_config():
         """Reset completo della configurazione"""
         nonlocal configurazione, livello_log
         configurazione = {
@@ -92,7 +89,7 @@ def reset_config():
         }
         livello_log = "INFO"
         print("Configurazione resettata ai valori predefiniti")
-       
+    
     # Restituisce un dizionario con tutte le funzioni
     return {
         "get": get_config,
@@ -102,11 +99,9 @@ def reset_config():
         "reset": reset_config
     }
 
-
 # Test dell'esempio 2
 print("=== ESEMPIO 2: Nonlocal con configuratore ===")
 config = crea_configuratore()
-
 print("Configurazione iniziale:", config["get"]())
 print("Livello log iniziale:", config["log_level"]())
 
