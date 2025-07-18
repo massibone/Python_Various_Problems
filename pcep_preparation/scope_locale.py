@@ -117,3 +117,7 @@ print("Livello log:", config["log_level"]())
 config["reset"]()
 print("Dopo reset:", config["get"]())
 print()
+
+# Esempio 3: Simulatore di stack di chiamate con tutti i tipi di scope
+stack_chiamate = []  # Variabile globale per tracciare le chiamate
+
