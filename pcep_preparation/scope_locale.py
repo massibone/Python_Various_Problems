@@ -127,3 +127,8 @@ def crea_calcolatrice():
     # Variabili dell'enclosing scope
     storia_operazioni = []
     precisione = 2
+def traccia_chiamata(nome_funzione):
+    """Aggiunge una chiamata al stack globale"""
+    global stack_chiamate
+    stack_chiamate.append(nome_funzione)
+    print(f"→ Chiamata: {nome_funzione}")
