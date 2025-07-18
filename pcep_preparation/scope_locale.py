@@ -121,3 +121,9 @@ print()
 # Esempio 3: Simulatore di stack di chiamate con tutti i tipi di scope
 stack_chiamate = []  # Variabile globale per tracciare le chiamate
 
+
+def crea_calcolatrice():
+    """Esempio complesso che combina tutti i tipi di scope"""
+    # Variabili dell'enclosing scope
+    storia_operazioni = []
+    precisione = 2
