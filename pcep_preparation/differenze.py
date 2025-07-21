@@ -81,3 +81,15 @@ parole.add("casa")
 parole.add("casa")  # Ignorato
 print("Set di parole uniche:", parole)  # {"casa"}
 
+
+
+    def calcola(operazione, a, b):
+        """Funzione principale di calcolo"""
+        nonlocal storia_operazioni  # Per modificare la storia locale
+        
+        # Variabili locali
+        risultato = 0
+        operazione_valida = True
+        
+        traccia_chiamata(f"calcola({operazione}, {a}, {b})")
+        
