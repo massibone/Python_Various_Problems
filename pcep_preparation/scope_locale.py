@@ -1,4 +1,4 @@
-# Gestione di un contatore globale con scope locale e globale
+e# Gestione di un contatore globale con scope locale e globale
 contatore_globale = 0  # Variabile globale
 nome_app = "Sistema Contatori"  # Variabile globale
 
@@ -132,3 +132,28 @@ def traccia_chiamata(nome_funzione):
     global stack_chiamate
     stack_chiamate.append(nome_funzione)
     print(f"→ Chiamata: {nome_funzione}")
+
+
+        # Nested function che usa tutti i tipi di scope
+        def esegui_operazione():
+            nonlocal risultato, operazione_valida  # Variabili della funzione parent
+            global stack_chiamate  # Variabile globale
+            
+            # Variabili locali di questa funzione
+            messaggio_debug = f"Eseguendo {operazione}"
+            
+            if operazione == "+":
+                risultato = a + b
+            elif operazione == "-":
+                risultato = a - b
+            elif operazione == "*":
+                risultato = a * b
+            elif operazione == "/":
+                if b != 0:
+                    risultato = a / b
+                else:
+                    risultato = float('inf')
+                    operazione_valida = False
+            else:
+                operazione_valida = False
+            
