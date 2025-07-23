@@ -156,4 +156,18 @@ def traccia_chiamata(nome_funzione):
                     operazione_valida = False
             else:
                 operazione_valida = False
+           
+            # Usa la variabile dell'enclosing scope (precisione)
+            if operazione_valida and isinstance(risultato, float):
+                risultato = round(risultato, precisione)
             
+            # Modifica variabile nonlocal della funzione parent
+            if operazione_valida:
+                storia_operazioni.append(f"{a} {operazione} {b} = {risultato}")
+            
+            print(f"  {messaggio_debug}: {'OK' if operazione_valida else 'ERRORE'}")
+        
+        esegui_operazione()
+        
+        return risultato if operazione_valida else None
+     
