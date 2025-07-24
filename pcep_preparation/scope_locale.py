@@ -170,4 +170,9 @@ def traccia_chiamata(nome_funzione):
         esegui_operazione()
         
         return risultato if operazione_valida else None
-     
+    def mostra_storia():
+        """Mostra la storia delle operazioni"""
+        nonlocal storia_operazioni
+        print(f"Storia operazioni (precisione: {precisione} decimali):")
+        for i, op in enumerate(storia_operazioni, 1):
+            print(f"  {i}. {op}")
