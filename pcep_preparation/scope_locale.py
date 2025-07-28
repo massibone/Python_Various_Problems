@@ -177,3 +177,11 @@ def mostra_storia():
         print(f"Storia operazioni (precisione: {precisione} decimali):")
         for i, op in enumerate(storia_operazioni, 1):
             print(f"  {i}. {op}")
+    
+    def cambia_precisione(nuova_precisione):
+        """Cambia la precisione dei calcoli"""
+        nonlocal precisione
+        vecchia = precisione
+        precisione = nuova_precisione
+        print(f"Precisione cambiata da {vecchia} a {precisione} decimali")
+    
