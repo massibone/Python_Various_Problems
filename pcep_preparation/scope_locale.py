@@ -178,7 +178,7 @@ def mostra_storia():
         for i, op in enumerate(storia_operazioni, 1):
             print(f"  {i}. {op}")
     
-    def cambia_precisione(nuova_precisione):
+def cambia_precisione(nuova_precisione):
         """Cambia la precisione dei calcoli"""
         nonlocal precisione
         vecchia = precisione
