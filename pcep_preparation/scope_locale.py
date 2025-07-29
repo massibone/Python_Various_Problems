@@ -186,7 +186,7 @@ def cambia_precisione(nuova_precisione):
         print(f"Precisione cambiata da {vecchia} a {precisione} decimali")
 
 
-    def mostra_stack():
+def mostra_stack():
         """Mostra lo stack delle chiamate globale"""
         global stack_chiamate
         print("Stack chiamate globale:")
