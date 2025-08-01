@@ -199,3 +199,6 @@ def mostra_stack():
         "precisione": cambia_precisione,
         "stack": mostra_stack
     }  
+# Test dell'esempio 3
+print("=== ESEMPIO 3: Scope complesso con calcolatrice ===")
+calc = crea_calcolatrice()
