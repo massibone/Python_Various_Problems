@@ -5,7 +5,7 @@ nome_app = "Sistema Contatori"  # Variabile globale
 def incrementa_contatore():
     """Dimostra l'uso di variabili globali e locali"""
     global contatore_globale  # Dichiara che vogliamo modificare la variabile globale
-    
+    e
     # Variabile locale
     messaggio = "Incrementando contatore..."  # Locale alla funzione
     print(messaggio)
