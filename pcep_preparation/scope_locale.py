@@ -202,3 +202,23 @@ def mostra_stack():
 # Test dell'esempio 3
 print("=== ESEMPIO 3: Scope complesso con calcolatrice ===")
 calc = crea_calcolatrice()
+
+
+
+
+# Esegui alcune operazioni
+print(f"10 + 5 = {calc['calcola']('+', 10, 5)}")
+print(f"20 / 3 = {calc['calcola']('/', 20, 3)}")
+print(f"15 * 2 = {calc['calcola']('*', 15, 2)}")
+
+print("\nCambiamo precisione a 4 decimali:")
+calc["precisione"](4)
+print(f"22 / 7 = {calc['calcola']('/', 22, 7)}")
+
+print("\nStoria delle operazioni:")
+calc["storia"]()
+
+print(f"\nStack globale delle chiamate:")
+calc["stack"]()
+
+print(f"\nStack globale alla fine: {stack_chiamate}")
