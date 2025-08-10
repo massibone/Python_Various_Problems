@@ -1,9 +1,9 @@
 import re
+
 # The RegEx library
-#
 # our regular expression (to find e-mails)
 # and text to search
-#
+
 regex = '\s[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}[\s]'
 text = """This is example of text with x@y.z embedded e-mails
 that we'll use as@gmail.com
