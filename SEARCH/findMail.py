@@ -13,11 +13,11 @@ The re module is awonderful@thing."""
 print('** Search text ***\n'+text)
 print('** Regex ***\n'+regex+'\n***')
 #
-#
+
 
 utext = text.upper()
 #
-#
+
 # perform a search (any emails found?)
 s = re.search(regex, utext)
 if s:
