@@ -7,6 +7,7 @@ import os
 import sys
 import math
 import datetime
+
 def esegui_operazioni_os():
     print("Esempio os:")
     print("Directory corrente:", os.getcwd())
