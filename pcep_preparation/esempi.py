@@ -26,3 +26,10 @@ def esegui_operazioni_os():
 
     # Operazione di ritorno alla directory precedente
     os.chdir("..")
+
+def esegui_operazioni_sys():
+    print("\nEsempio sys:")
+    print("Lista degli argomenti della riga di comando:", sys.argv)
+    print("Piattaforma su cui è in esecuzione il programma:", sys.platform)
+    print("Versione di Python in uso:", sys.version)
+    # sys.exit(0) rimosso per continuare l'esecuzione del codice
