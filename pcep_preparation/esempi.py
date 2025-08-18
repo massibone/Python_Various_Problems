@@ -33,3 +33,11 @@ def esegui_operazioni_sys():
     print("Piattaforma su cui è in esecuzione il programma:", sys.platform)
     print("Versione di Python in uso:", sys.version)
     # sys.exit(0) rimosso per continuare l'esecuzione del codice
+
+def esegui_operazioni_math():
+    print("\nEsempio math:")
+    print("Seno di pi/2:", math.sin(math.pi/2))
+    print("Coseno di pi/2:", math.cos(math.pi/2))
+    print("Tangente di pi/4:", math.tan(math.pi/4))
+    print("Radice quadrata di 16:", math.sqrt(16))
+    print("Risultato di 2^3:", math.pow(2, 3))
