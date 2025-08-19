@@ -41,3 +41,23 @@ def esegui_operazioni_math():
     print("Tangente di pi/4:", math.tan(math.pi/4))
     print("Radice quadrata di 16:", math.sqrt(16))
     print("Risultato di 2^3:", math.pow(2, 3))
+
+def esegui_operazioni_datetime():
+    print("\nEsempio datetime:")
+    print("Data corrente:", datetime.date.today())
+    print("Ora corrente:", datetime.datetime.now().time())
+    print("Data e ora corrente:", datetime.datetime.now())
+    delta = datetime.timedelta(days=1, hours=2, minutes=30)
+    print("Intervallo di tempo:", delta)
+
+def main():
+    esegui_operazioni_os()
+    esegui_operazioni_sys()
+    esegui_operazioni_math()
+    esegui_operazioni_datetime()
+
+if __name__ == "__main__":
+    main()
+
+
+
