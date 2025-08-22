@@ -4,3 +4,4 @@ data,valore
 2022-01-02,12.3
 2022-01-03,11.7
 "
+import datetime
