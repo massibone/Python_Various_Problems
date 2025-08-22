@@ -5,3 +5,12 @@ data,valore
 2022-01-03,11.7
 "
 import datetime
+
+def leggi_file(nome_file):
+try:
+with open(nome_file, 'r') as file:
+dati = file.readlines()
+return dati
+except FileNotFoundError:
+print("Il file non esiste")
+return None
