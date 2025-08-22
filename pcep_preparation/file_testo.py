@@ -7,10 +7,10 @@ data,valore
 import datetime
 
 def leggi_file(nome_file):
-try:
-with open(nome_file, 'r') as file:
-dati = file.readlines()
-return dati
-except FileNotFoundError:
-print("Il file non esiste")
-return None
+  try:
+    with open(nome_file, 'r') as file:
+    dati = file.readlines()
+    return dati
+  except FileNotFoundError:
+    print("Il file non esiste")
+    return None
