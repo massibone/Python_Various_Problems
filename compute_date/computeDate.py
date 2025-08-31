@@ -1,6 +1,5 @@
 import datetime
 
-
 def months(d1, d2):
     return d1.month - d2.month + 12*(d1.year - d2.year)
 
