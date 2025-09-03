@@ -14,6 +14,7 @@ def leggi_file(nome_file):
   except FileNotFoundError:
     print("Il file non esiste")
     return None
+
 def analizza_dati(dati):
     statistiche = {}
     for linea in dati:
