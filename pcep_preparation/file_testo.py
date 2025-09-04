@@ -30,3 +30,12 @@ def analizza_dati(dati):
             except ValueError as e:
                 print(f"Errore nella riga: {linea}. Errore: {e}")
     return statistiche 
+def calcola_statistiche(statistiche):
+media = {}
+minimo = {}
+massimo = {}
+for data, valori in statistiche.items():
+media[data] = sum(valori) / len(valori)
+minimo[data] = min(valori)
+massimo[data] = max(valori)
+return media, minimo, massimo
