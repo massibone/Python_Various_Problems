@@ -30,6 +30,7 @@ def analizza_dati(dati):
             except ValueError as e:
                 print(f"Errore nella riga: {linea}. Errore: {e}")
     return statistiche 
+
 def calcola_statistiche(statistiche):
 media = {}
 minimo = {}
