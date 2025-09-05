@@ -42,4 +42,5 @@ def calcola_statistiche(statistiche):
     return media, minimo, massimo
 
 def calcola_differenza_date(data1, data2):
-return (data2 - data1).days
+  return (data2 - data1).days
+
