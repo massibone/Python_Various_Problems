@@ -59,3 +59,14 @@ def stampa_statistiche(media, minimo, massimo, dati):
     data1 = datetime.datetime.strptime(dati[i].split(',')[0], '%Y-%m-%d')
     data2 = datetime.datetime.strptime(dati[i + 1].split(',')[0], '%Y-%m-%d')
     print(f"Differenza tra {data1.date()} e {data2.date()}: {calcola_differenza_date(data1, data2)} giorni")
+
+def main():
+nome_file = input("Inserisci il nome del file: ")
+dati = leggi_file(nome_file)
+if dati:
+statistiche = analizza_dati(dati)
+media, minimo, massimo = calcola_statistiche(statistiche)
+stampa_statistiche(media, minimo, massimo, dati)
+
+if __name__ == "__main__":
+  main()
