@@ -45,7 +45,7 @@ def calcola_differenza_date(data1, data2):
   return (data2 - data1).days
 
 def stampa_statistiche(media, minimo, massimo, dati):
-  print("Statistiche:")
+    print("Statistiche:")
     for data, valore in media.items():
       print(f"Data: {data.date()}, Media: {valore:.2f}")
       print("\nMinimi:")
@@ -56,9 +56,9 @@ def stampa_statistiche(media, minimo, massimo, dati):
       print(f"Data: {data.date()}, Massimo: {valore:.2f}")
       print("\nDifferenza tra le date:")
     for i in range(len(dati) - 1):
-    data1 = datetime.datetime.strptime(dati[i].split(',')[0], '%Y-%m-%d')
-    data2 = datetime.datetime.strptime(dati[i + 1].split(',')[0], '%Y-%m-%d')
-    print(f"Differenza tra {data1.date()} e {data2.date()}: {calcola_differenza_date(data1, data2)} giorni")
+      data1 = datetime.datetime.strptime(dati[i].split(',')[0], '%Y-%m-%d')
+      data2 = datetime.datetime.strptime(dati[i + 1].split(',')[0], '%Y-%m-%d')
+      print(f"Differenza tra {data1.date()} e {data2.date()}: {calcola_differenza_date(data1, data2)} giorni")
 
 def main():
 nome_file = input("Inserisci il nome del file: ")
