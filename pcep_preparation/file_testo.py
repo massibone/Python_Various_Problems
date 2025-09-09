@@ -50,11 +50,11 @@ def stampa_statistiche(media, minimo, massimo, dati):
       print(f"Data: {data.date()}, Media: {valore:.2f}")
       print("\nMinimi:")
     for data, valore in minimo.items():
-    print(f"Data: {data.date()}, Minimo: {valore:.2f}")
-    print("\nMassimi:")
+      print(f"Data: {data.date()}, Minimo: {valore:.2f}")
+      print("\nMassimi:")
     for data, valore in massimo.items():
-    print(f"Data: {data.date()}, Massimo: {valore:.2f}")
-    print("\nDifferenza tra le date:")
+      print(f"Data: {data.date()}, Massimo: {valore:.2f}")
+      print("\nDifferenza tra le date:")
     for i in range(len(dati) - 1):
     data1 = datetime.datetime.strptime(dati[i].split(',')[0], '%Y-%m-%d')
     data2 = datetime.datetime.strptime(dati[i + 1].split(',')[0], '%Y-%m-%d')
