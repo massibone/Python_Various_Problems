@@ -61,12 +61,12 @@ def stampa_statistiche(media, minimo, massimo, dati):
       print(f"Differenza tra {data1.date()} e {data2.date()}: {calcola_differenza_date(data1, data2)} giorni")
 
 def main():
-nome_file = input("Inserisci il nome del file: ")
-dati = leggi_file(nome_file)
-if dati:
-statistiche = analizza_dati(dati)
-media, minimo, massimo = calcola_statistiche(statistiche)
-stampa_statistiche(media, minimo, massimo, dati)
+  nome_file = input("Inserisci il nome del file: ")
+  dati = leggi_file(nome_file)
+  if dati:
+  statistiche = analizza_dati(dati)
+  media, minimo, massimo = calcola_statistiche(statistiche)
+  stampa_statistiche(media, minimo, massimo, dati)
 
 if __name__ == "__main__":
   main()
