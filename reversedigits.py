@@ -7,3 +7,9 @@ def verify_card_number(card_number):
     sum_of_odd_digits = 0
     card_number_reversed = card_number[-1:-5:-1]
     print(card_number_reversed)
+
+'''
+Per avere il reverse dal fondo all'inizio
+card_number_reversed = card_number[::-1]
+2411555411111114
+'''
