@@ -29,6 +29,8 @@ def main():
         print('INVALID!')
 
 main()
-oytput
+'''
+output
 49
-INVALID se cambio card_number invece di finale 1141 ma 1142 dà 50 §VALID
+INVALID se cambio card_number invece di finale 1141 ma 1142 dà 50 INVALID
+'''
