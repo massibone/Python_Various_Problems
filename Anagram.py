@@ -9,8 +9,6 @@ def anagram(str1,str2):
     else:
         print("noo not anagrams")
 
-
-
 anagram(str1,str2)
 
 '''
