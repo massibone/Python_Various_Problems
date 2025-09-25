@@ -6,7 +6,8 @@ pattern = 'w[ha]'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
 
-'''output
+'''
+output
 ['wh', 'wa']
 '''
 
