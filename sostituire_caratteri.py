@@ -30,3 +30,10 @@ constraints = [
             (special_chars, '')
 
         ]
+# Modifica: il punto (.) abbinerà qualsiasi carattere e il + lo ripeterà
+pattern = '.+' -->// console output
+['Not all those who wander are lost.']
+
+pattern = '\.'
+# // console output --> ['.']
+
