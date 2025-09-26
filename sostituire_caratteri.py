@@ -34,6 +34,6 @@ constraints = [
 pattern = '.+' -->// console output
 ['Not all those who wander are lost.']
 
-pattern = '\.'
+pattern = '\.' #è uguale output a pattern = r'\.'
 # // console output --> ['.']
 
