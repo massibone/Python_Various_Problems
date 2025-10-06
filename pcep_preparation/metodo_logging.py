@@ -2,13 +2,6 @@
 modulo logging per aggiungere messaggi diagnostici al codice.
 Identifica colli di bottiglia e ottimizza codice inefficiente.
 '''
-"""
-Sistema completo di logging e profiling per identificare e ottimizzare
-colli di bottiglia nelle prestazioni del codice Python.
-
-Autore: Versione Ottimizzata
-Data: 2025
-"""
 
 import logging
 import time
@@ -40,7 +33,7 @@ logger = logging.getLogger(__name__)
 
 def log_execution_time(func: Callable) -> Callable:
     """
-    Decoratore che misura e registra il tempo di esecuzione di una funzione.
+    Misura e registra il tempo di esecuzione di una funzione.
     
     Args:
         func: Funzione da decorare
@@ -90,7 +83,7 @@ def timer(nome_operazione: str):
 
 def profile_function(func: Callable) -> Callable:
     """
-    Decoratore che esegue il profiling dettagliato di una funzione con cProfile.
+    Esegue il profiling dettagliato di una funzione con cProfile.
     
     Args:
         func: Funzione da profilare
@@ -146,7 +139,7 @@ def funzione_veloce():
 
 def process_data_inefficiente(data: List[List[int]]) -> List[int]:
     """
-    Versione inefficiente con cicli annidati - O(n²) apparente.
+    Cicli annidati - O(n²) apparente.
     Nota: In realtà è O(n*m) dove n=righe, m=colonne.
     
     Args:
