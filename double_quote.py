@@ -1,0 +1,1 @@
+# La funzione validate_account_number prende un numero di account come input e applica le regole descritte (raddoppiare ogni altra cifra, sommare le cifre a due caratteri, ecc.) per validare il numero
