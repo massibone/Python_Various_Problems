@@ -1,0 +1,11 @@
+Utility per automazioni e progetti di data cleaning, contenente funzioni ricorsive, di formattazione e parsing di stringhe.
+
+*reverse_recursive(s): rovescia una stringa usando la ricorsione (es. "Python" → "nohtyP")
+
+camel_to_snake(name): converte un nome in CamelCase in snake_case (es. "MySampleText" → "my_sample_text")
+
+parse_key_value(text): estrae coppie chiave=valore da testo multilinea (es. "name=Marco\nage=50" → {"name": "Marco", "age": "50"})
+
+indent_text(text, spaces): aggiunge spazi di indentazione a ogni riga
+
+strip_html_tags(text): rimuove tag HTML semplici (es. "<p>Hello <b>World</b></p>" → "Hello World")
