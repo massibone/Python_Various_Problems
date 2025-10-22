@@ -143,7 +143,7 @@ class CSVDataFrameAnalyzer:
             raise
 
     # ----------------------------------------------------------------------
-    # METODI DI ANALISI (Snelliti usando il Caching delle Colonne)
+    # METODI DI ANALISI 
     # ----------------------------------------------------------------------
 
     def analyze(self, generate_plots: bool = True) -> Dict:
