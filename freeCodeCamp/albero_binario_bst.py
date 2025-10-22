@@ -85,5 +85,7 @@ print('Search for 80:', bst.search(80))
 
 print("Inorder traversal:", bst.inorder_traversal()) # Search for 80: 80
                                                      # Inorder traversal: [20, 30, 40, 50, 60, 70, 80]
-
+bst.delete(40)
+print('Search for 40:', bst.search(40)) # Search for 40: None
+print('Inorder traversal after deleting 40:', bst.inorder_traversal()) # Inorder traversal after deleting 40: [20, 30, 50, 60, 70, 80]
 
