@@ -207,7 +207,7 @@ class CSVDataFrameAnalyzer:
             
 
     # ----------------------------------------------------------------------
-    # METODI DI VISUALIZZAZIONE (Snelliti)
+    # METODI DI VISUALIZZAZIONE 
     # ----------------------------------------------------------------------
 
     def _generate_visualizations(self) -> None:
