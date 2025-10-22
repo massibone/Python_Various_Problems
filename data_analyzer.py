@@ -286,4 +286,4 @@ class CSVDataFrameAnalyzer:
         
         return df_clean
 
-    # ... (Metodi _add_report, _format_bytes e export_report invariati)
+    
