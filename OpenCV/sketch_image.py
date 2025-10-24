@@ -10,3 +10,4 @@ sketch=cv2.divide(grey_img,invertedblur,scale=128.0)
 cv2.imwrite('sketch.png', sketch)
 
 
+
