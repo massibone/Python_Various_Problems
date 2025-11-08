@@ -1,6 +1,7 @@
 name = input('Enter file:')
 handle = open(name, 'r')
 counts = dict()
+
 for line in handle:
     words = line.split()
     for word in words:
@@ -13,3 +14,4 @@ for word, count in list(counts.items()):
         bigcount = count
 
         print(bigword, bigcount)
+
