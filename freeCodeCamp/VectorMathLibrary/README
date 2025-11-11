@@ -1,0 +1,36 @@
+Vector Math Library - Libreria per operazioni matematiche con vettori 2D e 3D
+
+Questa libreria fornisce classi per lavorare con vettori in spazi R² (2D) e R³ (3D).
+Supporta tutte le operazioni matematiche standard sui vettori.
+
+📚 Cosa puoi fare:
+  • Creare vettori 2D e 3D
+  • Sommare e sottrarre vettori
+  • Calcolare prodotto scalare (dot product)
+  • Calcolare prodotto vettoriale (cross product) per vettori 3D
+  • Calcolare la norma (lunghezza) di un vettore
+  • Moltiplicare vettori per scalari
+  • Confrontare vettori (uguaglianza, maggiore, minore)
+
+🎓 Background matematico:
+  - Norma: |v| = √(x² + y² + z²)
+  - Prodotto scalare: v₁ · v₂ = x₁x₂ + y₁y₂ + z₁z₂
+  - Prodotto vettoriale: v₁ × v₂ (solo per R³)
+
+📦 Installazione:
+    Nessuna dipendenza esterna richiesta! Solo Python 3.6+
+
+🚀 Quick Start:
+    from vector_math import R2Vector, R3Vector
+    
+    # Vettori 2D
+    v1 = R2Vector(x=3, y=4)
+    v2 = R2Vector(x=1, y=2)
+    print(v1 + v2)  # R2Vector(x=4, y=6)
+    
+    # Vettori 3D
+    v3 = R3Vector(x=1, y=2, z=3)
+    print(v3.norm())  # 3.7416573867739413
+
+Autore: FreeCodeCamp Exercise
+License: MIT
