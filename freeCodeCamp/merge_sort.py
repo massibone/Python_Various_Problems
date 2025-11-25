@@ -1,3 +1,9 @@
+'''
+Unsorted array: 
+[4, 10, 6, 14, 2, 1, 8, 5]
+Sorted array: [1, 2, 4, 5, 6, 8, 10, 14]
+'''
+
 def merge_sort(array):
     if len(array) <= 1:
         return
