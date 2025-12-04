@@ -1,4 +1,5 @@
-Utility per automazioni e progetti di data cleaning, contenente funzioni ricorsive, di formattazione e parsing di stringhe.
+Utility per automazioni e progetti di data cleaning, 
+contenente funzioni ricorsive, di formattazione e parsing di stringhe.
 
 *reverse_recursive(s): rovescia una stringa usando la ricorsione (es. "Python" → "nohtyP")
 
