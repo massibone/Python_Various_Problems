@@ -3,7 +3,7 @@ Crea documento LaTeX con un semplice contenuto di esempio e lo salverà come "do
 Quindi, utilizzerà il comando pdflatex per compilare il file .tex in un documento PDF. 
 Infine, stampa un messaggio per confermare che il documento è stato generato correttamente. 
 '''
-# Importiamo il modulo os per gestire i file
+
 import os
 
 # Definiamo il contenuto del documento LaTeX
