@@ -1,4 +1,5 @@
 Calcolatore di Traiettoria Proiettile
+
 Questo progetto implementa una simulazione della traiettoria di un proiettile, tenendo conto della velocità iniziale, dell'altezza e dell'angolo di lancio, in un ambiente con accelerazione gravitazionale costante. L'output include un grafico a caratteri (ASCII art) che visualizza la parabola del proiettile.
 Struttura del Codice
 Il progetto è interamente contenuto nel file projectile_class.py e si basa su due classi principali:
