@@ -14,3 +14,4 @@ def reverse_recursive(s: str) -> str:
 if __name__ == "__main__":
     sample = "Automazione"
     print(reverse_recursive(sample))  # Output: "enoizamotuA"
+
