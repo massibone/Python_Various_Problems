@@ -114,8 +114,9 @@ if __name__ == "__main__":
     # La probabilità matematica è 1/2 = 0.5
     print(f"\nProbabilità stimata (Hat verde=1, blu=1, estrai 1 verde): {probability_simple}")
 
+'''
 OUTPUT:
 Probabilità stimata: 0.377
 
 Probabilità stimata (Hat verde=1, blu=1, estrai 1 verde): 0.4972
-
+'''
