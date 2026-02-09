@@ -3,7 +3,7 @@ contenente funzioni ricorsive, di formattazione e parsing di stringhe.
 
 reverse_recursive(s): rovescia una stringa usando la ricorsione (es. "Python" → "nohtyP")
 
-*camel_to_snake(name): converte un nome in CamelCase in snake_case (es. "MySampleText" → "my_sample_text")
+camel_to_snake(name): converte un nome in CamelCase in snake_case (es. "MySampleText" → "my_sample_text")
 
 parse_key_value(text): estrae coppie chiave=valore da testo multilinea (es. "name=Marco\nage=50" → {"name": "Marco", "age": "50"})
 
