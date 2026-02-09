@@ -1,7 +1,7 @@
 Utility per automazioni e progetti di data cleaning, 
 contenente funzioni ricorsive, di formattazione e parsing di stringhe.
 
-*reverse_recursive(s): rovescia una stringa usando la ricorsione (es. "Python" → "nohtyP")
+reverse_recursive(s): rovescia una stringa usando la ricorsione (es. "Python" → "nohtyP")
 
 *camel_to_snake(name): converte un nome in CamelCase in snake_case (es. "MySampleText" → "my_sample_text")
 
