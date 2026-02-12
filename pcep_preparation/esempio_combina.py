@@ -1,4 +1,3 @@
-
 '''
 Creare un elenco di studenti con nome, 
 materia, e voto, ordinare gli studenti per voto decrescente, e stampare una tabella con posizione, nome, materia, e voto.
