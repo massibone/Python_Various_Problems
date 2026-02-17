@@ -1,3 +1,18 @@
+'''
+Analisi di dati relativi ai giocatori di baseball utilizzando la libreria NumPy.
+Lo script esegue le seguenti operazioni su un array 2D (np_baseball):
+
+•
+Estrazione e stampa della 50esima riga.
+
+•
+Creazione di un vettore dedicato per il peso (seconda colonna).
+
+•
+Selezione dell'altezza specifica del 124esimo giocatore.
+
+'''
+
 import numpy as np
 
 # Nota: 'baseball' deve essere una lista di liste definita precedentemente.
