@@ -2,6 +2,7 @@
 Calcola quadrato.
 Es 25**2= 5**2+(2+1)**2=925
 '''
+
 def calcola_quadrato(numero):
     cifre = [int(digito) for digito in str(numero)]
     primo_digito = cifre[0]
