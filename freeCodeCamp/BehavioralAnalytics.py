@@ -2,6 +2,7 @@
 Script base che genera dati sintetici di traffico, estrae feature semplici, 
 applica clustering KMeans e definisce regole soglia per comportamento anomalo
 '''
+
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
