@@ -20,3 +20,4 @@ similar_files = compare_similar_files(directory_path)
 # Stampa dei file con nomi simili
 for file1, file2 in similar_files:
     print(f"I file {file1} e {file2} hanno nomi simili.")
+
