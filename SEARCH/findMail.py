@@ -14,7 +14,6 @@ print('** Search text ***\n'+text)
 print('** Regex ***\n'+regex+'\n***')
 #
 
-
 utext = text.upper()
 #
 
