@@ -9,9 +9,7 @@
 | **Trasformazione** | Filtraggio delle righe e selezione delle colonne di interesse. |
 | **Arricchimento** | Unione (Join) con dataset correlati per espandere le informazioni. |
 | **Aggregazione** | Sintesi dei dati tramite raggruppamenti e funzioni statistiche. |
-
 ---
-
 ## 2. Analisi Tecnica e Ottimizzazioni
 
 ### Caricamento e Gestione Memoria
