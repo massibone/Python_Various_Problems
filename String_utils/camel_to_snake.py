@@ -7,4 +7,3 @@ def camel_to_snake(name):
 
 # Test della funzione
 print(camel_to_snake("MySampleText")) # Output: "my_sample_text"
-
