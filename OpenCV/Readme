@@ -1,2 +1,10 @@
 Vari esempi libreria opencv
 
+Riconoscimento_HaarCscade.py
+
+Script educativo che rileva volti dalla webcam usando OpenCV e il classificatore Haar Cascade; 
+disegna riquadri intorno ai volti e permette di salvare immagini premendo la barra spaziatrice.
+
+Per applicazioni reali di sicurezza, controllo accessi o sblocco dispositivi è necessario 
+usare sistemi di riconoscimento facciale basati su embedding (es. FaceNet, dlib, InsightFace) 
+e una gestione sicura delle identità; Haar Cascade è solo per rilevamento semplice.
