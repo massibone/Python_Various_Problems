@@ -1,5 +1,4 @@
 # rovescia una stringa usando la ricorsione
-
 def reverse_recursive(s: str) -> str:
     """
     Rovescia una stringa usando la ricorsione.
