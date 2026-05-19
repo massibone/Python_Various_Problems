@@ -13,7 +13,7 @@ Mostra due finestre: "Detections + Lanes" e "Occupancy Grid + Path".
 File principali
 autonomous_demo.py — script tutto-in-uno che implementa detection, lane detection, occupany grid e planner.
 
-Images/your_image.jpg — immagine di esempio (sostituire con la tua).
+Images/your_image.jpg — immagine di esempio.
 yolov8n.pt (o altro modello YOLO) 
 haarcascade_frontalface_default.xml — (non richiesto per questa demo, solo negli esempi precedenti).
 Prerequisiti
