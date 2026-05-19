@@ -41,7 +41,7 @@ Questo progetto è una **demo sperimentale** per testare alcune tecniche di base
 
 - **Python 3.8+**
 - Librerie necessarie (installabili con `pip`):
-  ```bash
+  ```
   pip install opencv-python numpy torch torchvision ultralytics networkx
   ```
 - **Modello YOLO**: Scarica un modello (es. `yolov8n.pt`) e assicurati che la variabile `YOLO_MODEL` nel codice punti al file corretto.
@@ -52,7 +52,7 @@ Questo progetto è una **demo sperimentale** per testare alcune tecniche di base
 
 1. Assicurati di avere tutte le dipendenze installate.
 2. Esegui:
-  ```bash
+  ```
    python autonomous_demo.py
   ```
 3. Verranno aperte due finestre con i risultati. Premi un tasto per chiuderle.
@@ -94,8 +94,6 @@ Puoi modificare direttamente nello script:
 
 ## 💡 Idee per estendere il progetto
 
-Se vuoi portarlo al livello successivo, ecco alcune idee:
-
 - **Cambiare il modello di detection**: Prova con **YOLOv5** o **Detectron2**.
 - **Aggiungere la stima della profondità**: Usa **MiDaS** per migliorare la proiezione sulla griglia.
 - **Lavorare con video**: Trasforma la pipeline per accettare input da video/camera e ottimizza l'inference con la GPU.
@@ -111,4 +109,4 @@ Se vuoi portarlo al livello successivo, ecco alcune idee:
 - [MiDaS](https://github.com/isl-org/MiDaS) per la stima della profondità monoculare.
 - [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) / [RTAB-Map](https://github.com/introlab/rtabmap) per lo SLAM.
 - [ROS Navigation Stack](http://wiki.ros.org/navigation) per l'integrazione robotica/autonoma.  
-</canvaentity
+
