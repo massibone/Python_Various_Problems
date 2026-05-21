@@ -1,3 +1,19 @@
 Calculate number of installments from date to date
 
 
+LEAP_YEAR
+Scopo: determinare se un anno è bisestile, anno comune o se è precedente all'introduzione del calendario gregoriano (1582).
+Come funziona:
+Se year < 1582 -> "Not within the Gregorian calendar period".
+Altrimenti si applicano le regole del calendario gregoriano:
+Non divisibile per 4 -> "Common year".
+Divisibile per 4 ma non per 100 -> "Leap year".
+Divisibile per 100 ma non per 400 -> "Common year".
+Divisibile per 400 -> "Leap year".
+Esempi:
+Input 2000 -> Leap year
+Input 2015 -> Common year
+Input 1999 -> Common year
+Input 1996 -> Leap year
+Input 1580 -> Not within the Gregorian calendar period
+Esecuzione: python3 leap_year.py e inserire l'anno quando richiesto.
