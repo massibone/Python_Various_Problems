@@ -21,6 +21,7 @@ Hai utilizzato correttamente le espressioni di Polars (`pl.col`).
 - **Efficienza**: Polars eccelle grazie al *Predicate Pushdown*. Se filtri per `età > 30`, Polars cercherà di applicare questo filtro mentre legge il file, evitando di caricare righe inutili.
 - **Suggerimento**: Concatena le operazioni in una singola "query" invece di creare DataFrame intermedi.
 
+
 ### Aggregazione e Parallelismo
 L'uso di `.group_by().agg()` in Polars è estremamente potente.
 - **Vantaggio**: A differenza di Pandas, Polars esegue le aggregazioni (come `mean` e `sum`) in parallelo su tutti i core della CPU disponibili senza configurazioni extra.
