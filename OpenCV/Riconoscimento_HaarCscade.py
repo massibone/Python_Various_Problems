@@ -2,6 +2,7 @@ import cv2
 import os
 from datetime import datetime
 
+
 # Percorso al classificatore Haar Cascade fornito con OpenCV
 CASCADE_PATH = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 
