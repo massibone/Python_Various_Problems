@@ -1,5 +1,6 @@
 # Polars vs Pandas per Carichi Dati Moderni
 
+
 ## 1. Suddivisione del Programma
 
 | Fase | Descrizione |
