@@ -1,7 +1,6 @@
 ComputeDate
 Calculate number of installments from date to date
 
-
 LEAP_YEAR
 Scopo: determinare se un anno è bisestile, anno comune o se è precedente all'introduzione del calendario gregoriano (1582).
 Come funziona:
