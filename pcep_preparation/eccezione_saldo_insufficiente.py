@@ -2,6 +2,7 @@ class ContoBancario:
     def __init__(self, saldo):
         self.saldo = saldo
 
+    
     def preleva(self, importo):
         try:
             if importo > self.saldo:
