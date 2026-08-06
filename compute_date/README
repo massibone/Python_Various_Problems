@@ -17,3 +17,4 @@ Input 1999 -> Common year
 Input 1996 -> Leap year
 Input 1580 -> Not within the Gregorian calendar period
 Esecuzione: python3 leap_year.py e inserire l'anno quando richiesto.
+
