@@ -2,6 +2,7 @@
 
 ## 1. Suddivisione del Programma
 
+
 | Fase | Descrizione |
 | :--- | :--- |
 | **Ingestione** | Caricamento dei dati da sorgenti esterne (CSV). |
