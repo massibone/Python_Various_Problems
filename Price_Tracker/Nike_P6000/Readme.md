@@ -1,3 +1,27 @@
+# Nike P-6000 Price Tracker
+
+Script Python che monitora il prezzo di scarpe Nike P-6000 e invia notifiche via Telegram ed email quando il prezzo scende sotto una soglia.
+
+## Requisiti
+
+- Python 3.9+
+- `pip install -r requirements.txt`
+
+## Configurazione
+
+1. Copia `.env.example` in `.env` e compila:
+   - `PRODUCT_URLS`: lista di URL dei prodotti da monitorare  
+   - `PRICE_THRESHOLD`: prezzo massimo a cui vuoi essere avvisato  
+   - (opzionale) Telegram e email
+
+2. Esegui:
+
+```bash
+python main.py
+```
+
+Lo script controlla ogni X ore e scrive su `storico_prezzi_p6000.json` e `alert_prezzi.log`.
+
 3 URL di riferimento (da usare nello script)
 Questi sono buoni punti di partenza per le P-6000 bianche da uomo:
 
