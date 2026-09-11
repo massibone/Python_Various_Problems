@@ -1,7 +1,7 @@
 products:
   - name: "Nike P-6000 bianche (Nike)"
     url: "https://www.nike.com/it/t/scarpa-nike-p-6000-V04wEyXX/CD6404-107"
-    threshold: 130
+    threshold: 85
     enabled: true
     folder: "Nike_P6000"  # opzionale, per riferimento
 
