@@ -2,25 +2,19 @@ import os
 import re
 import json
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+import yaml
 
-# CONFIG (puoi leggere da env o hardcoded)
-PRODUCT_URLS = [
-    url.strip()
-    for url in os.getenv(
-        "PRODUCT_URLS",
-        "https://www.nike.com/it/t/scarpa-p-6000-CVTvTry5",
-    ).split(",")
-]
-
-PRICE_THRESHOLD = float(os.getenv("PRICE_THRESHOLD", "90"))
+BASE_DIR = Path(__file__).resolve().parent
+CONFIG_FILE = BASE_DIR / "config.yml"
+HISTORY_FILE = BASE_DIR / "storico_prezzi.json"
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 
-HISTORY_FILE = "storico_prezzi_p6000.json"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -28,6 +22,11 @@ HEADERS = {
         "Chrome/120.0 Safari/537.36"
     )
 }
+
+
+def load_config():
+    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
 
 def load_history():
@@ -59,6 +58,7 @@ def send_telegram_message(text: str):
 
 def extract_price_from_nike(html: str) -> float | None:
     soup = BeautifulSoup(html, "html.parser")
+
     price_el = soup.select_one('[data-test="product-price"]')
     if not price_el:
         for el in soup.select(".product-price, [class*='price']"):
@@ -78,6 +78,7 @@ def extract_price_from_nike(html: str) -> float | None:
 
 def extract_price_from_generic(html: str) -> float | None:
     soup = BeautifulSoup(html, "html.parser")
+
     for el in soup.select(".price, .product-price, [class*='price'], [data-price]"):
         text = el.get_text(strip=True)
         if "€" in text:
@@ -110,36 +111,51 @@ def get_price(url: str) -> float | None:
 
 
 def main():
+    config = load_config()
+    products = config.get("products", [])
     history = load_history()
 
-    for url in PRODUCT_URLS:
+    for prod in products:
+        if not prod.get("enabled", True):
+            continue
+
+        name = prod.get("name", "Prodotto")
+        url = prod.get("url")
+        threshold = float(prod.get("threshold", 0))
+
+        if not url:
+            print(f"Salto {name}: URL mancante")
+            continue
+
         try:
             price = get_price(url)
         except Exception as e:
-            print(f"Errore su {url}: {e}")
+            print(f"Errore su {name} ({url}): {e}")
             continue
 
         if price is None:
-            print(f"{url} -> prezzo non rilevato")
+            print(f"{name} -> prezzo non rilevato")
             continue
 
-        print(f"{url} -> {price:.2f} €")
+        print(f"{name} -> {price:.2f} €")
 
-        prev = history.get(url, {}).get("last_price")
-        history[url] = {
+        key = url
+        prev = history.get(key, {}).get("last_price")
+        history[key] = {
+            "name": name,
             "last_price": price,
             "last_check": datetime.now().isoformat(),
         }
 
-        if price <= PRICE_THRESHOLD:
+        if price <= threshold:
             drop_info = ""
             if prev is not None:
                 drop_info = f" (prima: {prev:.2f} €)"
 
             telegram_text = (
-                f"🔔 <b>Prezzo sceso Nike P-6000</b>\n"
+                f"🔔 <b>Prezzo sceso: {name}</b>\n"
                 f"Prezzo: <b>{price:.2f} €</b>\n"
-                f"Soglia: {PRICE_THRESHOLD:.2f} €{drop_info}\n"
+                f"Soglia: {threshold:.2f} €{drop_info}\n"
                 f"URL: <a href='{url}'>apri prodotto</a>"
             )
             send_telegram_message(telegram_text)
