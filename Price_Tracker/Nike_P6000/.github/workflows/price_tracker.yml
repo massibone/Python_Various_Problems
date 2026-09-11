@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: price_tracker
+        working-directory: Price_Tracker
 
     steps:
       - name: Checkout repo
