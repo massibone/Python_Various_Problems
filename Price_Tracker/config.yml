@@ -5,8 +5,8 @@ products:
     enabled: true
     folder: "Nike_P6000"  # opzionale, per riferimento
 
-  - name: "Nike P-6000 bianche (JD Sports)"
-    url: "https://www.jdsports.it/product/grigio-nike-p-6000/19730803_jdsportsit/"
+  - name: "Nike P-6000 bianche (Footlocker)"
+    url: "https://www.footlocker.it/it/product/nike-p-6000-donna-scarpe/315215585902.html"
     threshold: 85
     enabled: true
     folder: "Nike_P6000"
