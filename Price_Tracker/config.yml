@@ -1,0 +1,19 @@
+products:
+  - name: "Nike P-6000 bianche (Nike)"
+    url: "https://www.nike.com/it/t/scarpa-p-6000-CVTvTry5"
+    threshold: 90
+    enabled: true
+    folder: "Nike_P6000"  # opzionale, per riferimento
+
+  - name: "Nike P-6000 bianche (JD Sports)"
+    url: "https://www.jdsports.it/uomo/collection/nike-p-6000/colore/bianco/"
+    threshold: 85
+    enabled: true
+    folder: "Nike_P6000"
+
+  # Futuro prodotto:
+  # - name: "Adidas XYZ"
+  #   url: "https://www.adidas.it/..."
+  #   threshold: 70
+  #   enabled: true
+  #   folder: "Adidas_X"
