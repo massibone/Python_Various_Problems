@@ -15,4 +15,3 @@ for word, count in list(counts.items()):
         bigcount = count
 
         print(bigword, bigcount)
-
