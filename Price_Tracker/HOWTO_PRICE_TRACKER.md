@@ -41,9 +41,9 @@ Python_Various_Problems/
    - un nome (es. "Price Tracker Bot"),
    - uno username (deve finire con `bot`, es. `PriceTrackerBot`).
 3. BotFather ti restituisce un **token** tipo:
-   ```text
-   123456:ABCdefGHIjklMNOpqrsTUVwxyz
-   ```
+   
+   123456:xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   
 4. Cerca il tuo bot in Telegram e avvialo con `/start`.
 
 ### 2.2) Ottenere il tuo CHAT_ID
