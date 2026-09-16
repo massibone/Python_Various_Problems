@@ -14,7 +14,6 @@ Questo documento spiega come:
 
 La repo deve avere almeno:
 
-```text
 Python_Various_Problems/
 ├─ .github/
 │  └─ workflows/
@@ -24,7 +23,7 @@ Python_Various_Problems/
 │  ├─ main.py
 │  └─ requirements.txt
 └─ ...
-```
+
 
 - `.github/workflows/price_tracker.yml`: workflow GitHub Actions.
 - `Price_Tracker/config.yml`: lista dei prodotti da monitorare.
