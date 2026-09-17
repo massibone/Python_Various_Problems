@@ -7,7 +7,7 @@ products:
 
   - name: "Nike P-6000 bianche (Footlocker)"
     url: "https://www.footlocker.it/it/product/~/315215585902.html"
-    threshold: 85
+    threshold: 4
     enabled: true
     folder: "Nike_P6000"
 
