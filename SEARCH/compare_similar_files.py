@@ -1,5 +1,6 @@
 import os
 
+
 def compare_similar_files(directory):
     """Confronta file con nomi simili all'interno di una directory"""
     similar_files = []
