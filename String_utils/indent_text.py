@@ -13,3 +13,4 @@ def indent_text(text, spaces):
     # splitlines(keepends=True) mantiene i caratteri di nuova riga originali
     lines = text.splitlines(keepends=True)
     return "".join(indentation + line for line in lines)
+
