@@ -11,7 +11,7 @@ def calcola_quadrato(numero):
     risultato = primo_digito**2 + (secondo_digito + 1)**2
     return f"{numero}**2 = {primo_digito}**2 + ({secondo_digito} + 1)**2 = {risultato}"
 
-asdf
+
 for num in range(10, 100):
     print(calcola_quadrato(num))
 
