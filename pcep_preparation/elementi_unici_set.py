@@ -19,3 +19,4 @@ Il confronto tra le lunghezze è O(1).
 Applicabilità: Funziona per qualsiasi tipo di elemento hashable (es. numeri, stringhe, tuple), 
 ma non per oggetti non hashabili (es. liste annidate).
 '''
+
