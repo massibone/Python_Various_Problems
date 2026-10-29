@@ -1,4 +1,3 @@
-
 def ha_elementi_unici(lista):
     """
     Restituisce True se tutti gli elementi sono unici, altrimenti False.
