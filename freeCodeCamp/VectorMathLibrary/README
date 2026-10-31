@@ -1,6 +1,5 @@
 Vector Math Library - Libreria per operazioni matematiche con vettori 2D e 3D
 
-add
 Questa libreria fornisce classi per lavorare con vettori in spazi R² (2D) e R³ (3D).
 Supporta tutte le operazioni matematiche standard sui vettori.
 
