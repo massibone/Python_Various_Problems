@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 import re
 
+
 class Equation(ABC):
     degree: int
     type: str
