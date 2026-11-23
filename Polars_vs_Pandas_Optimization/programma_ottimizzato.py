@@ -18,6 +18,7 @@ def crea_dati_esempio():
     }
     pl.DataFrame(dati_altro).write_csv("dati_altro.csv")
 
+
 def esegui_analisi_ottimizzata():
     """Esegue l'analisi dei dati utilizzando Polars in modalità Lazy."""
     
