@@ -1,5 +1,6 @@
 Vari esempi libreria opencv
 
+
 Riconoscimento_HaarCscade.py
 
 Script educativo che rileva volti dalla webcam usando OpenCV e il classificatore Haar Cascade; 
