@@ -4,6 +4,7 @@ Quindi, utilizzerà il comando pdflatex per compilare il file .tex in un documen
 Infine, stampa un messaggio per confermare che il documento è stato generato correttamente. 
 '''
 
+
 import os
 
 # Definiamo il contenuto del documento LaTeX
