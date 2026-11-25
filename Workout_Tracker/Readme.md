@@ -24,3 +24,5 @@ Tracker grafico (PySide6) per il programma calisthenics Fitloop, Phase 2 (W5–W
 
 
 pip install -r requirements.txt
+
+<img width="1197" height="472" alt="image" src="https://github.com/user-attachments/assets/b21c3ab0-d114-438b-bed7-fcaadfbe3f72" />
