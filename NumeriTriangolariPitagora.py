@@ -9,6 +9,7 @@ plt.ylabel("Y")
 x = []
 y = []
 
+
 # Creazione della base del triangolo (3 puntini)
 base_x = [2, 4, 6]
 base_y = 0.5  # Altezza della base
